@@ -5,4 +5,6 @@
     <string name="spacer_decimal">000</string>
     <string name="hex_color_description">color in hexadecimal:</string>
     <string name="hex_color_spacer">#000000</string>
+    <string name="compute">compute</string>
+    <string name="compute_content_desc">compute the color</string>
 </resources>

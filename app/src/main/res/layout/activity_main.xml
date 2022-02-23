@@ -50,9 +50,34 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/hex_color_description"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/hex_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@id/compute"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <ImageButton
+            android:id="@+id/compute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_color_lens_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/compute_content_desc" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -76,17 +101,6 @@
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
-
-        <TextView
-            android:id="@+id/current_decimal_red"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/spacer_decimal"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/current_hex_red" />
 
         <TextView
             android:layout_width="100dp"
@@ -130,17 +144,6 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
-            android:id="@+id/current_decimal_green"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/spacer_decimal"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/current_hex_green" />
-
-        <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -181,16 +184,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <TextView
-            android:id="@+id/current_decimal_blue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/spacer_decimal"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/current_hex_blue" />
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
